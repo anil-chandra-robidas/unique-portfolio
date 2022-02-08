@@ -13,9 +13,9 @@ const Footer = () => {
                       <li><span><FaEnvelope/></span> anilkumer.cse@gmail.com</li>
                   </ul>
                   <ul className='footer-social'>
-                      <li><a href=""><FaFacebookF /></a></li>
-                      <li><a href=""><FaLinkedinIn /></a></li>
-                      <li><a href=""><FaGithub /></a></li>
+                      <li><a href="https://www.facebook.com/anil.cse" target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+                      <li><a href="https://www.linkedin.com/in/anil-kumer/?fbclid=IwAR0zrNBZ-VWpR3JmmyE1WWj8BOenCYvBbuYfW56wO3HE6kcoih5c8vYfZY8" target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
+                      <li><a href="https://github.com/anil-chandra-robidas" target="_blank" rel="noreferrer"><FaGithub /></a></li>
                   </ul>
               </div>
               <div className='footer-widget second-widget'>
