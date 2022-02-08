@@ -12,14 +12,7 @@ const Education = () => {
 
   return (
     <div
-      className="experience"
-      style={{
-        background: "url('../images/exbg.jpg')",
-        backgroundPosition: "top",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "repeat-x",
-      }}
-    >
+      className="experience education">
       <h2 className="section-title" data-aos="fade-right">
         Educational Qualifications
       </h2>

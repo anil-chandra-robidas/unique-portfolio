@@ -440,8 +440,30 @@ a {
     }
 }
 
-
 /*========== End Experience ==========*/
+
+
+
+/*========== Start Education ==========*/
+
+.education {
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    background-color: #ff9800;
+    padding-bottom: 10rem;
+    .section-title {
+        color: var(--white);
+        &:before,
+        &:after {
+            background-color: var(--white);
+        }
+    }
+
+    .experience-area {
+        background-color: var(--brown);
+    }
+}
+
+/*========== End Education ==========*/
 
 
 /*========== Start Portfolio ==========*/
@@ -466,7 +488,7 @@ a {
         margin-bottom: 0px;
 
         .tab-btn {
-            background-color: var(--blue);
+            background-color: var(--brown);
             padding: 8px 10px;
             cursor: pointer;
             color: var(--white);

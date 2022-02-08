@@ -14,7 +14,7 @@ const Experience = () => {
     <div
       className="experience"
       style={{
-        background: "url('../images/exbg.jpg')",
+        background: "url('../unique-portfolio/images/exbg.jpg')",
         backgroundPosition: "top",
         backgroundAttachment: "fixed",
         backgroundRepeat: "repeat-x",
