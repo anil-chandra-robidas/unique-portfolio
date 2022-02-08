@@ -65,7 +65,7 @@ const PortfolioData = [
     {   
         id: 8,
         categoryName: "react",
-        imgageThumb: "images/react-js-portfolio.png",
+        imgageThumb: "./unique-portfolio/images/react-js-portfolio.png",
         projectName: "React Portfolio template Version Two",
         projectLanguage: "React JS, React Router Dom, React-Icons, SASS",
         projectPath: "#"
@@ -146,7 +146,7 @@ const PortfolioData = [
     {   
         id: 17,
         categoryName: "elementor",
-        imgageThumb: "images/gymx-demo.png",
+        imgageThumb: "./unique-portfolio/images/gymx-demo.png",
         projectName: "Gymx - Fitness Club WordPress Theme",
         projectLanguage: "PHP, WordpPress, Javascript, jQuery, Bootstrap, HTML, SCSS",
         projectPath: "https://gymx.webexperts.link/"
