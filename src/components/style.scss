@@ -694,6 +694,32 @@ a {
 /*========== End Contact ==========*/
 
 
+/*========== Start Not Found ==========*/
+.error-page {
+    padding: 10rem 7rem;
+    text-align: center;
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    a {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+        background-color: #130a4f;
+        padding: 10px 0px;
+        display: block;
+        color: #fff;
+        width: 15%;
+        margin: 0 auto;
+        border-top-left-radius: 15px;
+    }
+}
+/*========== End Not Found ==========*/
+
+
 /*========== Start Footer ==========*/
 
 .top-footer {
