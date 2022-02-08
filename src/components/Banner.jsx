@@ -40,7 +40,7 @@ const Banner = () => {
               </ul>
           </div>
           <div className='userprofile' data-aos="fade-left">
-              <img src="images/profile1.png" alt="" />
+              <img src=".//unique-portfolio/images/profile1.png" alt="" />
           </div>
       </div>
   );
