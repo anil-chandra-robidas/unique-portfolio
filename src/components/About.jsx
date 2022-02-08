@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="meProfile">
-        <img data-aos="fade-right" src="./unique-portfolio/images/profile3.jpg" alt="aboutmeprofile" />
+        <img data-aos="fade-right" src="images/profile3.jpg" alt="aboutmeprofile" />
       </div>
       <div className="meInfo">
         <h3 className="section-title" data-aos="fade-left">About Me</h3>
