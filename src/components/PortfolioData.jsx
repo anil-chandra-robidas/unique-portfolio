@@ -68,7 +68,7 @@ const PortfolioData = [
         imgageThumb: "/unique-portfolio/images/react-js-portfolio.png",
         projectName: "React Portfolio template Version Two",
         projectLanguage: "React JS, React Router Dom, React-Icons, SASS",
-        projectPath: "#"
+        projectPath: "https://anil-chandra-robidas.github.io/unique-portfolio/"
     },
 
     {   
