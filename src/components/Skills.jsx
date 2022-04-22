@@ -5,7 +5,7 @@ const Skills = () => {
   const [skill, setSkill] = useState(SkillsData);
 
   return (
-    <div className="user-skills">
+    <div className="user-skills" id="skill">
       <div className="user-skill">
         <h2 className="section-title" data-aos="fade-right">
           Professional Skills

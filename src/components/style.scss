@@ -73,20 +73,20 @@ a {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 5px 7px rgb(0, 0, 0, 0.5);
-    height: 100px;
+    height: 80px;
     padding: 0 7rem;
-    border-bottom: 3px solid var(--brown);
 
     .logo {
          
         flex: 3;
 
       a {
-          font-size: 2.5em;
+          font-size: 1.5em;
           font-weight: 600;
           color: var(--white);
           font-family: 'Poppins', sans-serif;
           text-transform: uppercase;
+          cursor: pointer;
       }
     }
 
@@ -102,9 +102,10 @@ a {
         a {
             color: var(--white);
             font-weight: 500;
-            padding: 0 20px;
-            font-size: 15px;
+            padding: 0 15px;
+            font-size: 13px;
             text-transform: uppercase;
+            cursor: pointer;
         }
 
     }
@@ -120,16 +121,21 @@ a {
      display: flex;
      flex-wrap: wrap;
      padding: 0rem 7rem;
-     padding-top: 5rem;
-     padding-bottom: 0;
+     padding-top: 3rem;
+     padding-bottom: 5rem;
      background-color: var(--graybg);
 }
 
 .userbio {
-    flex: 4;
+    flex-basis: 45%;
+    margin-right: 10%;
+    margin-top: 50px;
+    // .Typewriter {
+    //     display: inline-block;
+    // }
 }
 .userprofile {
-    flex: 8;
+    flex-basis: 45%;
 }
 
 .userbio-welcome-text {
@@ -147,16 +153,16 @@ a {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: .5px;
-    padding-top: 20px;
+    padding-top: 30px;
     span {
         color: var(--brown);
     }
 }
 
 .userbio-position {
-    font-size: 1.7rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 5px;
 }
 
@@ -200,11 +206,16 @@ a {
 }
 
 .userprofile > img {
-    max-width: 80%;
-    margin-top: -70px;
+    max-width: 100%;
     margin-left: auto;
     display: flex;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 20px 0px rgb(0, 0, 0, 0.5);
+    box-shadow: 0px 20px 0px rgb(0, 0, 0, 0.5);
+    -webkit-filter: saturate(0.2);
+    filter: saturate(0.2);
 }
+
 
 @mixin banner-btn($bgColor, $txtColor) {
     font-size: 18px;
@@ -256,16 +267,16 @@ a {
 
 .meProfile {
 
-    flex: 6;
+    flex-basis: 50%;
     background-color: var(--white);
-    text-align: center;
-    margin-top: 3rem;
 
     img  {
-        width: 60%;
-        background-color: #d4394f;
-        padding: 10px;
-        box-shadow: 0px 5px 10px #130a4f;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-filter: saturate(0.2);
+        filter: saturate(0.2);
     }
 }
 
@@ -273,6 +284,17 @@ a {
     flex: 6;
     background-color: var(--blue);
     padding: 3.5rem 2rem;
+
+    h3 {
+        color: var(--white);
+       padding-bottom: 10px;
+       padding-top: 10px;
+    }
+
+    li {
+        color: var(--white);
+        line-height: 1.8;
+    }
 
     p {
         color: #fff;
@@ -303,7 +325,7 @@ a {
         span {
             text-transform: capitalize;
             margin-right: 10px;
-            border: 1px solid #fff;
+            border-bottom: 2px solid #fff;
         }
     }
 }
@@ -425,6 +447,13 @@ a {
         margin: 10px 20px 10px 0;
         flex-basis: 45%;
         box-sizing: border-box;
+        transition: all 0.3s;
+        box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+        border-radius: 5px;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
 
         h4 {
             font-size: 20px;
@@ -448,18 +477,41 @@ a {
 
 .education {
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
-    background-color: #ff9800;
+    background-color: var(--blue);
     padding-bottom: 10rem;
     .section-title {
         color: var(--white);
-        &:before,
-        &:after {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        
+        &::after, 
+        &:before{
             background-color: var(--white);
         }
     }
 
+    .experince-wrapper {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
     .experience-area {
-        background-color: var(--brown);
+        background-color: var(--white);
+        color: var(--blue);
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+        transform: translate(0);
+        border-left: 50px solid var(--brown);
+        border-right: 50px solid var(--brown);
+        border-bottom: 1px solid var(--graybg);
+
+        &:hover {
+            transform: translateY(0);
+        }
     }
 }
 
@@ -639,7 +691,7 @@ a {
         margin-right: 30px;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
         box-sizing: border-box;
-        border: 8px solid #b7b2d7;
+        border: 8px solid var(--blue);
     }
 
     .contact-form {
@@ -658,7 +710,7 @@ a {
             padding: 13px;
             display: block;
             width: 100%;
-            border: 1px solid #cdc1c1;
+            border: 1px solid var(--blue);
             margin-bottom: 22px;
             font-size: 15px;
             color: #000000;
@@ -847,107 +899,45 @@ a {
 /*========== End Footer ==========*/
 
 
-/*============================ Responsive Css ===================================*/
-@media (max-width: 1024px) {
-    .navbar {
-        flex-wrap: wrap;
-        padding: 20px;
-        height: 100%;
-
-        .logo {
-            flex: 0 0 20%;
-            a {
-                font-size: 20px;
-            }
-        }
-        .menu {
-            flex: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-            ul {
-                display: block;
-
-                a {
-                    padding: 10px 0;
-                    display: block;
-                }
-            }
-
-        }
-    }
-
-    .banner {
-        padding: 50px 20px 30px;
-        .userbio {
-            flex: 0 0 50%;
-        }
-
-        .userprofile {
-            margin-top: 4rem;
-        }
-    }
-
-
-    .user-skills {
-           padding: 0;
-           padding-top: 50px;
-
-           .user-skill {
-               width: 100%;
-           }
-        }
-    
-        .experience {
-            padding: 50px 20px 30px;
-
-            .experience-area {
-                margin: 0;
-                flex-basis: 50%;
-            }
-        }
-
-        .portfolio {
-            padding: 50px 20px 30px;
-            .pane-item {
-                margin-right: 30px;
-                width: 45%;
-            }
-        }
-
-        .contact {
-            padding: 50px 20px 30px;
-
-            .contact-map {
-                margin-bottom: 50px;
-            }
-
-            .contact-form {
-                .form-input {
-                    box-sizing: border-box;
-                }
-            }
-
-        }
-
-        
-        .top-footer {
-            padding: 50px 20px 30px;
-
-            .first-widget {
-                flex: inherit;
-                padding-right: 0;
-            }
-        }
-}
 
 .mobile-menu-icon {
     display: none;
 }
 
+/*============================ Responsive Css ===================================*/
 
+@mixin  hideemenu {
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    transition: 0.5s;
+    z-index: 9999;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--blue);
+}
+
+@mixin  activemenu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    width: 30%;
+    opacity: 1;
+    visibility: visible;
+    padding: 20px;
+    transition: 0.5s;
+    top: 60px;
+    left: 0;
+    
+}
 
 @media (max-width: 767px) {
+
+    .section-title {
+        font-size: 22px;
+        line-height: 24px;
+    }
     .navbar {
         flex-wrap: wrap;
         padding: 20px;
@@ -960,11 +950,7 @@ a {
             }
         }
         .menu {
-            display: none;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            transition: all 0.5s;
-            transform: translateY(-30px);
+            @include hideemenu;
 
             ul {
                 display: block;
@@ -972,13 +958,23 @@ a {
                 a {
                     padding: 10px 0;
                     display: block;
+                    border-bottom: 1px solid #555;
+                    &:last-child {
+                        border-bottom: 0
+                    }
                 }
             }
 
         }
         .menu.active {
-            display: block;
-            transform: translateY(0px);
+            @include activemenu;
+
+            &:after {
+               content: "";
+               position: absolute;
+               width: 100%;
+               background-color: rgba(0,0,0,0.3);
+            }
         }
     }
 
@@ -988,17 +984,16 @@ a {
         display: block;
     }
 
-    .section-title {
-        font-size: 25px;
-        line-height: 24px;
-    }
     .banner {
         padding: 50px 20px 30px;
+
+        .userbio {
+            flex-basis: 100%;
+            padding-bottom: 20px;
+            margin-top: 10px;
+        }
     }
-    .userbio {
-        flex: inherit;
-        padding-bottom: 30px;
-    }
+    
     .userprofile {
        display: none;
     }
@@ -1046,6 +1041,22 @@ a {
         }
     }
 
+    .education {
+        clip-path: none;
+
+        .section-title {
+            width: 100%;
+        }
+
+        .experince-wrapper {
+            width: 100%;
+        }
+        .experience-area {
+            border-left-width: 25px;
+            border-right-width: 25px;
+        }
+     }
+
     .portfolio {
         padding: 50px 20px 30px;
         .tab-btn {
@@ -1088,4 +1099,139 @@ a {
             line-height: 26px;
         }
     }
+}
+
+@media (min-width: 767px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        box-sizing: border-box;
+    }
+
+    .home {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 20px;
+
+        .logo {
+            flex: 0 0 20%;
+            a {
+                font-size: 20px;
+            }
+        }
+        .menu {
+            @include hideemenu;
+
+            ul {
+                display: block;
+
+                a {
+                    padding: 10px 0;
+                    display: block;
+                }
+            }
+
+        }
+
+        .menu.active {
+            @include activemenu;
+        }
+
+        .mobile-menu-icon {
+            display: block;
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+    
+
+    .banner {
+        padding: 50px 20px 30px;
+        .userbio {
+            flex-basis: 50%;
+            margin-right: 10%;
+            margin-top: 0;
+        }
+
+        .userprofile {
+            flex-basis: 40%;
+        }
+    }
+
+
+    .user-skills {
+           padding: 0;
+           padding-top: 50px;
+
+           .user-skill {
+               width: 100%;
+           }
+        }
+    
+        .experience {
+            padding: 50px 20px 30px;
+
+            .experience-area {
+                margin: 0;
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .education {
+           clip-path: none;
+
+           .experience-area {
+               margin-bottom: 0;
+           }
+        }
+
+        .portfolio {
+            padding: 50px 20px 30px;
+
+            .pane-item {
+                margin-top: 20px;
+                width: calc( 50% - 10px);
+                margin-right: 20px;
+
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
+
+           
+        }
+
+        .contact {
+            padding: 50px 20px 30px;
+
+            .contact-map {
+                margin-bottom: 50px;
+            }
+
+            .contact-form {
+                .form-input {
+                    box-sizing: border-box;
+                }
+            }
+
+        }
+
+        
+        .top-footer {
+            padding: 50px 20px 30px;
+
+            .first-widget {
+                flex: inherit;
+                padding-right: 0;
+            }
+        }
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaPhoneAlt, FaHome, FaRegEnvelope, FaFacebookSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Typewriter from "typewriter-effect";
 
 
 const Banner = () => {
@@ -22,8 +23,16 @@ const Banner = () => {
       <div className='banner'>
           <div className='userbio' data-aos="fade-right">
               <h4 className='userbio-welcome-text'>Hello There!</h4>
-              <h2 className='userbio-name'>I am <span>anil chandra robidas</span></h2>
-              <h3 className='userbio-position'>Front end developer</h3>
+              <h2 className='userbio-name'>Myself <span>
+              <Typewriter
+        options={{
+          strings: ["Anil Chandra Robidas"],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+                  </span></h2>
+              <h3 className='userbio-position'>Front End and WordPress theme developer</h3>
               <ul className='userbio-addtional'>
                   <li>
                    <span><FaHome /></span> 
@@ -34,13 +43,13 @@ const Banner = () => {
               </ul>
               <h4 className='userbio-social-title'>Follow Me: </h4>
               <ul className='userbio-social'>
-                  <li><a target="_blank" href={url.facebook}><FaFacebookSquare /></a></li>
-                  <li><a target="_blank" href={url.linkedIn}><FaLinkedin /></a></li>
-                  <li><a target="_blank" href={url.github}><FaGithubSquare /></a></li>
+                  <li><a target="_blank" rel='noreferrer' href={url.facebook}><FaFacebookSquare /></a></li>
+                  <li><a target="_blank" rel='noreferrer' href={url.linkedIn}><FaLinkedin /></a></li>
+                  <li><a target="_blank" rel='noreferrer' href={url.github}><FaGithubSquare /></a></li>
               </ul>
           </div>
-          <div className='userprofile' data-aos="fade-left">
-              <img src="/unique-portfolio/images/profile1.png" alt="" />
+          <div className='userprofile' data-aos="fade-left" data-aos-once="false">
+              <img className='zoom-in-out' src="/unique-portfolio/images/banner-image.jpg" alt="" />
           </div>
       </div>
   );

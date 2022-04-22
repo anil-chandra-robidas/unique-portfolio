@@ -6,11 +6,10 @@ import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
-import Footer from './Footer';
 
 const Home = () => {
   return(
-      <div className='home'>
+      <div className='home' id='home'>
           <Banner />
           <About />
           <Skills />

@@ -12,7 +12,7 @@ const Education = () => {
 
   return (
     <div
-      className="experience education">
+      className="experience education" id="education">
       <h2 className="section-title" data-aos="fade-right">
         Educational Qualifications
       </h2>
@@ -55,19 +55,6 @@ const Education = () => {
           </p>
           <p>
             <FaHandPointRight /> Passing Years : 2008
-          </p>
-        </div>
-
-        <div className="experience-area">
-          <h4>Unknown</h4>
-          <p>
-            <FaHandPointRight /> Position : Unknown
-          </p>
-          <p>
-            <FaHandPointRight /> Duration : Unknown
-          </p>
-          <p>
-            <FaHandPointRight /> Location: Unknown.
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@ const Experience = () => {
         backgroundPosition: "top",
         backgroundAttachment: "fixed",
         backgroundRepeat: "repeat-x",
-      }}
+      }} id="experience"
     >
       <h2 className="section-title" data-aos="fade-right">
         Experience Areas
@@ -51,7 +51,7 @@ const Experience = () => {
           </p>
         </div>
         <div className="experience-area">
-          <h4>HRSOFT BD</h4>
+          <h4>HRSoft Bd</h4>
           <p>
             <FaHandPointRight /> Position : Front End Development
           </p>
@@ -61,18 +61,6 @@ const Experience = () => {
           <p>
             <FaHandPointRight /> Location: 12/6, Solimullah Road, Mohammadpur,
             Dhaka 1207, Bangladesh.
-          </p>
-        </div>
-        <div className="experience-area">
-          <h4>Unknown</h4>
-          <p>
-            <FaHandPointRight /> Position : Unknown
-          </p>
-          <p>
-            <FaHandPointRight /> Duration : Unknown
-          </p>
-          <p>
-            <FaHandPointRight /> Location: Unknown.
           </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       <h3 data-aos="fade-right" className="section-title">My Portfolio</h3>
       <div className="tabs-wrapper">
 
