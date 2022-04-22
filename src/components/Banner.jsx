@@ -23,14 +23,8 @@ const Banner = () => {
       <div className='banner'>
           <div className='userbio' data-aos="fade-right">
               <h4 className='userbio-welcome-text'>Hello There!</h4>
-              <h2 className='userbio-name'>Myself <span>
-              <Typewriter
-        options={{
-          strings: ["Anil Chandra Robidas"],
-          autoStart: true,
-          loop: true,
-        }}
-      />
+              <h2 className='userbio-name'>Myself <span><br />
+              Anil Chandra Robidas
                   </span></h2>
               <h3 className='userbio-position'>Front End and WordPress theme developer</h3>
               <ul className='userbio-addtional'>
