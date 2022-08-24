@@ -26,7 +26,7 @@ const About = () => {
       </div>
       <div className="meInfo">
         <h3 className="section-title" data-aos="fade-left">About Me</h3>
-        <p>Myself anil chandra robidas. I completed B.Sc Graduation in Computer Science and Engineering (CSE) from Hajee Mohammad Danesh Science and Technology University. Professionally, I'm a Front End Developer since 2019 and have 3+ years of job experience. </p>
+        <p>This is anil chandra robidas. I completed B.Sc Graduation in Computer Science and Engineering (CSE) from Hajee Mohammad Danesh Science and Technology University. Professionally, I'm a Front End and WordPress Developer since 2019 and have 3+ years of job experience. </p>
 
         <div className="meAdditional">
          {

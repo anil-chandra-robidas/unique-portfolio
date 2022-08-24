@@ -8,7 +8,7 @@ const Footer = () => {
               <div className='footer-widget first-widget'>
                   <h4 className='section-title'>Follow Me</h4>
                   <ul className='footer-address'>
-                      <li><span><FaHome /></span> House# 10, Road# 06, Kaderabad Housing, Mohammadpur, Dhaka, Bangladesh.</li>
+                      <li><span><FaHome /></span> Salambagh Jame Masjid, East Rampura, Dhaka, Bangladesh.</li>
                       <li><span><FaPhoneAlt/></span> +8801755448113</li>
                       <li><span><FaEnvelope/></span> anilkumer.cse@gmail.com</li>
                   </ul>

@@ -24,13 +24,25 @@ const Experience = () => {
         Experience Areas
       </h2>
       <div className="experince-wrapper">
+      <div className="experience-area">
+          <h4>ARN Tech Limited</h4>
+          <p>
+            <FaHandPointRight /> Position : WordPress Developer
+          </p>
+          <p>
+            <FaHandPointRight /> Duration : 13th July 2022 to Running
+          </p>
+          <p>
+            <FaHandPointRight /> Location: Merul Badda, Dhaka, Bangladesh.
+          </p>
+        </div>
         <div className="experience-area">
           <h4>WebExperts.Marketing</h4>
           <p>
-            <FaHandPointRight /> Position : Front End Development
+            <FaHandPointRight /> Position : WordPress Theme Developer
           </p>
           <p>
-            <FaHandPointRight /> Duration : 18th October 2021 Running{" "}
+            <FaHandPointRight /> Duration : 18th 2021 October 30 June 2022{" "}
           </p>
           <p>
             <FaHandPointRight /> Location: United States.
@@ -39,14 +51,14 @@ const Experience = () => {
         <div className="experience-area">
           <h4>XpeedStudio</h4>
           <p>
-            <FaHandPointRight /> Position : Front End Development
+            <FaHandPointRight /> Position : WordPress Theme Developer
           </p>
           <p>
             <FaHandPointRight /> Duration : 1st January 2020 to 5th September
             2021
           </p>
           <p>
-            <FaHandPointRight /> Location: Asad avenue, Nur Jahan Road, Dhaka,
+            <FaHandPointRight /> Location: Nur Jahan Road, Asad avenue, Dhaka,
             Bangladesh.
           </p>
         </div>

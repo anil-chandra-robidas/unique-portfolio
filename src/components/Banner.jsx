@@ -30,7 +30,7 @@ const Banner = () => {
               <ul className='userbio-addtional'>
                   <li>
                    <span><FaHome /></span> 
-                   House# 10, Road# 06, Kaderabad Housing, Mohammadpur, Dhaka, Bangladesh.
+                   Salambagh Jame Masjid, East Rampura, Dhaka, Bangladesh.
                   </li>
                   <li><span><FaPhoneAlt/></span> +8801755448113</li>
                   <li><span><FaRegEnvelope/></span> anilkumer.cse@gmail.com</li>
